@@ -3,3 +3,5 @@ node_modules/
 .gemini/
 *.log
 make_bandana.py
+upload-cloudinary.js
+.env

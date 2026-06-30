@@ -13,42 +13,42 @@ const PRODUCTS = [
     name: "M-01 OVERSIZED HOODIE",
     price: 120.00,
     category: "apparel",
-    image: "assets/product-1.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/product-1.png"
   },
   {
     id: 2,
     name: "P-04 CARGO PANTS",
     price: 145.00,
     category: "apparel",
-    image: "assets/product-2.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/product-2.png"
   },
   {
     id: 3,
     name: "J-02 DUSTER COAT",
     price: 280.00,
     category: "apparel",
-    image: "assets/product-3.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/product-3.png"
   },
   {
     id: 4,
     name: "A-08 PRINTED BANDANA",
     price: 30.00,
     category: "accessories",
-    image: "assets/bandana.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/bandana.png"
   },
   {
     id: 5,
     name: "T-07 BOX TEE",
     price: 65.00,
     category: "apparel",
-    image: "assets/product-5.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/product-5.png"
   },
   {
     id: 6,
     name: "S-05 ARCHITECTURAL SNEAKERS",
     price: 190.00,
     category: "accessories",
-    image: "assets/product-6.png"
+    image: "https://res.cloudinary.com/dh3gtif7f/image/upload/product-6.png"
   }
 ];
 
