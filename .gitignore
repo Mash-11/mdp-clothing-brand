@@ -1,0 +1,5 @@
+node_modules/
+.system_generated/
+.gemini/
+*.log
+make_bandana.py

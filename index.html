@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDP FASHION STORE | High-Contrast Streetwear Lookbook</title>
+  <meta name="description" content="Explore the clean, minimalist black-and-white streetwear collection of MDP Fashion Store. Premium editorial lookbooks and direct checkout via WhatsApp.">
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Follower -->
+  <div class="custom-cursor" id="custom-cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-text">VIEW</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="brand-group">
+        <img src="assets/logo.jpeg" alt="MDP Logo" class="brand-logo" id="brand-logo-img">
+        <a href="#" class="brand-logo-text" id="logo-text">MDP.STUDIO</a>
+      </div>
+      <nav class="nav-links" id="main-nav">
+        <a href="#collections" class="nav-link">COLLECTIONS</a>
+        <a href="#shop" class="nav-link">SHOP</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </nav>
+      <div class="cart-trigger-container">
+        <button class="cart-trigger" id="cart-btn" aria-label="Open Cart">
+          <span class="cart-label">BAG</span>
+          <span class="cart-count-wrap">[ <span id="cart-count">0</span> ]</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-wrapper">
+        <img src="assets/product-3.png" alt="Editorial Fashion Duster Coat" class="hero-bg-img" id="hero-bg-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title" id="hero-title">
+          <span class="word-wrap"><span class="word">MDP</span></span>
+          <span class="word-wrap"><span class="word">FASHION</span></span>
+          <span class="word-wrap"><span class="word">STORE</span></span>
+        </h1>
+        <div class="hero-subtitle" id="hero-subtitle">
+          <p class="subtitle-text">COLLECTION 01 — STREETWEAR ARCHIVE</p>
+          <div class="scroll-indicator" id="scroll-ind">
+            <span>SCROLL DOWN</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Runway Marquee Ticker -->
+    <section class="marquee-section" id="ticker-section">
+      <div class="marquee-track" id="marquee-track">
+        <div class="marquee-content">
+          <span>MDP FASHION STORE • COLLECTION 01 / RE-DEFINING STREETWEAR • MADE FOR THE FUTURE • MONOCHROME ESSENTIALS • MDP FASHION STORE • NOW LIVE •</span>
+          <span>MDP FASHION STORE • COLLECTION 01 / RE-DEFINING STREETWEAR • MADE FOR THE FUTURE • MONOCHROME ESSENTIALS • MDP FASHION STORE • NOW LIVE •</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Strip -->
+    <section class="category-strip-section" id="collections">
+      <div class="category-grid">
+        <a href="#shop" class="category-card" data-category="all" id="cat-all">
+          <span class="cat-num">01/</span>
+          <h3 class="cat-title">ALL ITEMS</h3>
+        </a>
+        <a href="#shop" class="category-card" data-category="apparel" id="cat-apparel">
+          <span class="cat-num">02/</span>
+          <h3 class="cat-title">APPAREL</h3>
+        </a>
+        <a href="#shop" class="category-card" data-category="accessories" id="cat-accessories">
+          <span class="cat-num">03/</span>
+          <h3 class="cat-title">ACCESSORIES</h3>
+        </a>
+      </div>
+    </section>
+
+    <!-- Shop Section / Product Grid -->
+    <section class="shop-section" id="shop">
+      <div class="section-header-bar">
+        <h2 class="section-title">THE ARCHIVE</h2>
+        <span class="section-meta">GRID VIEW / TOTAL 06 ITEMS</span>
+      </div>
+      
+      <!-- Product Catalog CSS Grid -->
+      <div class="product-grid" id="product-grid">
+        <!-- Products will be generated dynamically or kept in HTML for standard semantic parsing -->
+        <article class="product-card" data-category="apparel" id="prod-1">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/product-1.png" alt="M-01 OVERSIZED HOODIE" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">M-01 OVERSIZED HOODIE</h3>
+              <span class="product-price">$120.00</span>
+            </div>
+            <p class="product-desc">Heavyweight 450gsm loopback cotton, oversized silhouette, raw edge hem detail.</p>
+            <button class="quick-add-btn" data-id="1" id="add-btn-1">QUICK ADD</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="apparel" id="prod-2">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/product-2.png" alt="P-04 CARGO PANTS" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">P-04 CARGO PANTS</h3>
+              <span class="product-price">$145.00</span>
+            </div>
+            <p class="product-desc">Structured nylon canvas pants, adjustable bungee drawstrings, 6 pocket tactical utility layout.</p>
+            <button class="quick-add-btn" data-id="2" id="add-btn-2">QUICK ADD</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="apparel" id="prod-3">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/product-3.png" alt="J-02 DUSTER COAT" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">J-02 DUSTER COAT</h3>
+              <span class="product-price">$280.00</span>
+            </div>
+            <p class="product-desc">Tailored drop-shoulder duster coat crafted from heavy melton wool, raw seams, ankle-length drape.</p>
+            <button class="quick-add-btn" data-id="3" id="add-btn-3">QUICK ADD</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="accessories" id="prod-4">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/bandana.png" alt="A-08 PRINTED BANDANA" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">A-08 PRINTED BANDANA</h3>
+              <span class="product-price">$30.00</span>
+            </div>
+            <p class="product-desc">Premium cotton bandana featuring geometric graphic printing. Soft finish, monochrome aesthetic.</p>
+            <button class="quick-add-btn" data-id="4" id="add-btn-4">QUICK ADD</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="apparel" id="prod-5">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/product-5.png" alt="T-07 BOX TEE" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">T-07 BOX TEE</h3>
+              <span class="product-price">$65.00</span>
+            </div>
+            <p class="product-desc">240gsm organic heavy jersey t-shirt, relaxed shoulders, thick mock neck rib structure.</p>
+            <button class="quick-add-btn" data-id="5" id="add-btn-5">QUICK ADD</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="accessories" id="prod-6">
+          <div class="product-img-wrapper cursor-hover-trigger">
+            <img src="assets/product-6.png" alt="S-05 ARCHITECTURAL SNEAKERS" class="product-img" loading="lazy">
+          </div>
+          <div class="product-info">
+            <div class="product-meta-row">
+              <h3 class="product-name">S-05 ARCHITECTURAL SNEAKERS</h3>
+              <span class="product-price">$190.00</span>
+            </div>
+            <p class="product-desc">High-top leather streetwear sneakers with dynamic panel layouts and vulcanized rubber sole.</p>
+            <button class="quick-add-btn" data-id="6" id="add-btn-6">QUICK ADD</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lookbook Editorial Quote -->
+    <section class="editorial-quote-section" id="about">
+      <div class="quote-container">
+        <h3 class="quote-text" id="about-text">"WE REDUCE THE COMPLEXITY OF EVERYDAY WEAR INTO STRUCTURED SHAPES, HARSH SILHOUETTES, AND ABSOLUTE MONOCHROMATIC SIMPLICITY. MDP REPRESENTS DESTRUCTURING FASHION."</h3>
+        <p class="quote-author">— MDP FASHION ARCHIVE DESIGN TEAM, 2024</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col branding-col">
+        <h4 class="footer-brand">MDP.STUDIO</h4>
+        <p class="footer-tagline">Architectural streetwear for the future.</p>
+        <p class="footer-info" style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--color-gray); line-height: 1.6;">
+          Chula Vista, San Diego, CA<br>
+          Tel: +1 919-916-6362<br>
+          Email: margaretkeys777@gmail.com
+        </p>
+      </div>
+      <div class="footer-col link-col">
+        <h5 class="footer-heading">LINKS</h5>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">SHIPPING & RETURNS</a></li>
+          <li><a href="#" class="footer-link">PRIVACY POLICY</a></li>
+          <li><a href="#" class="footer-link">TERMS OF SERVICE</a></li>
+        </ul>
+      </div>
+      <div class="footer-col form-col">
+        <h5 class="footer-heading">NEWSLETTER</h5>
+        <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed.');">
+          <input type="email" placeholder="EMAIL ADDRESS" required class="newsletter-input" id="newsletter-email">
+          <button type="submit" class="newsletter-submit-btn" id="newsletter-submit">JOIN</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 MDP FASHION STORE. ALL RIGHTS RESERVED.</span>
+      <span>USD ($)</span>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+    <div class="cart-header">
+      <h2 id="cart-title">SHOPPING BAG</h2>
+      <div style="display: flex; align-items: center; gap: 1.5rem;">
+        <button class="cart-clear-btn" id="cart-clear-btn" aria-label="Clear Cart" style="color: var(--color-gray); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; border-bottom: 1px solid transparent; transition: var(--transition-fast); background: none; border: none; cursor: pointer;">CLEAR ALL</button>
+        <button class="cart-close-btn" id="cart-close-btn" aria-label="Close Cart">CLOSE [X]</button>
+      </div>
+    </div>
+
+    <!-- Cart Items Container -->
+    <div class="cart-items-wrapper" id="cart-items-container">
+      <!-- Dynamically filled with JS -->
+      <div class="empty-cart-message" id="empty-cart-msg">YOUR BAG IS CURRENTLY EMPTY.</div>
+    </div>
+
+    <!-- Cart Footer & Guest Checkout Form -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-total-row">
+        <span>SUBTOTAL</span>
+        <span id="cart-total-price">$0.00</span>
+      </div>
+
+      <!-- Guest Checkout Info -->
+      <form class="checkout-form" id="checkout-form">
+        <h3 class="form-title">GUEST CHECKOUT</h3>
+        <p class="form-sub">We process orders via WhatsApp for quick personal support.</p>
+        
+        <div class="input-group">
+          <label for="checkout-name">FULL NAME *</label>
+          <input type="text" id="checkout-name" placeholder="Michael Parker" required>
+        </div>
+
+        <div class="input-group">
+          <label for="checkout-address">SHIPPING ADDRESS *</label>
+          <textarea id="checkout-address" rows="3" placeholder="Street name, City, State, ZIP, Country" required></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="checkout-note">ADDITIONAL NOTE (OPTIONAL)</label>
+          <input type="text" id="checkout-note" placeholder="Gate code, buzzer info, etc.">
+        </div>
+
+        <button type="submit" class="checkout-btn" id="whatsapp-checkout-btn">
+          CHECKOUT VIA WHATSAPP
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Policy Slide-up Modal -->
+  <div class="policy-overlay" id="policy-overlay"></div>
+  <aside class="policy-modal" id="policy-modal" role="dialog" aria-modal="true" aria-labelledby="policy-title">
+    <div class="policy-header" style="padding: 2rem 2.5rem; border-bottom: 1px solid rgba(245, 245, 240, 0.15); display: flex; justify-content: space-between; align-items: center; background-color: var(--color-cart-bg); color: var(--color-cart-fg);">
+      <h2 id="policy-title" style="font-family: var(--font-display); font-size: 1.25rem; letter-spacing: 0.05em; text-transform: uppercase;">POLICY DETAILS</h2>
+      <button class="policy-close-btn" id="policy-close-btn" aria-label="Close Policy" style="color: var(--color-cart-fg); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; opacity: 0.7; transition: opacity 0.2s; background: none; border: none; cursor: pointer;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.7">CLOSE [X]</button>
+    </div>
+    <div class="policy-body" id="policy-body" style="padding: 2.5rem; overflow-y: auto; flex-grow: 1; font-size: 0.9rem; line-height: 1.6; color: var(--color-cart-fg); background-color: var(--color-cart-bg);">
+      <!-- Content injected by JS -->
+    </div>
+  </aside>
+
+  <!-- GSAP & Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Application JS -->
+  <script src="app.js"></script>
+</body>
+</html>
